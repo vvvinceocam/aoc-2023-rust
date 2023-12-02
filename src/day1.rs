@@ -5,7 +5,7 @@ use regex::Regex;
 static PATTERN: &str = r".*(one|two|three|four|five|six|seven|eight|nine|\d)";
 lazy_static! {
     static ref FIRST: Regex = Regex::new(&PATTERN[2..]).unwrap();
-    static ref LAST: Regex = Regex::new(&PATTERN).unwrap();
+    static ref LAST: Regex = Regex::new(PATTERN).unwrap();
 }
 
 #[aoc_generator(day1)]
