@@ -1,4 +1,4 @@
-#![feature(iter_array_chunks)]
+#![feature(iter_array_chunks, array_windows)]
 
 use aoc_runner_derive::aoc_lib;
 
@@ -10,5 +10,6 @@ mod day5;
 mod day6;
 mod day7;
 mod day8;
+mod day9;
 
 aoc_lib! { year = 2023 }
